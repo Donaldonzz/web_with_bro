@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Latihan JS Loop</title>
+    <script>
+        let i =11;
+        while(i<10){
+            console.log('Angka ke',i);
+            i++;
+        }
+        let j =11;
+        do{
+            console.log('Angka ke=',j);
+            j++;
+        }
+        while(j<10);
+    </script>
+</head>
+<body>
+    <table border="1" id="myTable">
+        <thead>
+            <tr>
+                <th>No</th>
+                <th>Nama</th>
+                <th>Usia</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Baris akan ditambahkan dengan JavaScript -->
+        </tbody>
+    </table>
+
+    <script>
+        // Data contoh
+        const data = [
+            { nama: "Budi", usia: 25 },
+            { nama: "Ani", usia: 22 },
+            { nama: "Doni", usia: 28 },
+            { nama: "Siti", usia: 24 },
+            { nama: "Donald", usia: 12 },
+            { nama: "Elloy", usia: 24 }
+        ];
+        
+        const tableBody = document.querySelector("#myTable tbody");
+        
+        for (let i = 0; i < data.length; i++) {
+            let row = document.createElement("tr");
+            row.innerHTML = `
+                <td>${i + 1}</td>
+                <td>${data[i].nama}</td>
+                <td>${data[i].usia}</td>
+            `;
+            tableBody.appendChild(row);
+        }
+    </script>
+</body>
+</html>

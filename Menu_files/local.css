@@ -1,0 +1,39 @@
+.country-62 .global-navbar .navbar-header, .country-62 .paymentintermediate .modal-content .modal-header .logo, .country-62 .modal-login .modal-header .logo { background-color: #BD0018; }
+@media screen and (max-width: 1199px) { .country-62 .global-navbar .navbar-nav .menu-item { padding-right: 15px; margin-right: 15px; }
+  .country-62 .global-navbar .navbar-nav .menu-item:first-child { padding-left: 15px; } }
+.country-62 .action-edit-guestemail { user-select: none; cursor: pointer; }
+.country-62 .action-edit-guestemail i:before { content: "\f0d7"; }
+.country-62 .action-edit-guestemail.collapsed i:before { content: "\f0da"; }
+.country-62 .panel-home-masthead-form .action-check-address { font-size: 18px; font-size: 1.125rem; }
+.country-62 .address-search-results .footnotes-warning table.table-address-guide { margin: 10px 0; width: 50%; }
+.country-62 .address-search-results .footnotes-warning table.table-address-guide td { padding: 10px 15px; border: 1px solid; width: 50%; }
+.country-62 .radio-button-group--card-type-icon .radio, .country-62 .radio-button-group--card-type-icon .iradio { margin-top: 2px; }
+.country-62 .card-type-logo .card-icon { float: none; display: inline-block; vertical-align: middle; }
+.country-62 .card-type-logo .card-icons-gopay { background-image: url(../img/payment/gopay_logo.png); background-repeat: no-repeat; height: 25px; width: 40px; }
+
+.country-62.page-menu .panel-product .product-cost { font-size: 15px; font-size: 0.9375rem; }
+.country-62.page-menu .panel-product .product-nutritional-info .text-default { font-size: 12px; font-size: 0.75rem; }
+.country-62.page-menu .product-card--standard { position: relative; float: left; width: 50%; min-height: 1px; padding-left: 5px; padding-right: 5px; }
+.country-62.page-menu .product-card--standard .panel-body { padding-left: 35px; padding-right: 35px; padding-top: 35px; }
+
+.lang-in .food-icons-sprite, .lang-in .food-icons-new, .lang-in .food-icons-spicy { background-image: url('../img/sprite-food-icons.png'); background-repeat: no-repeat; }
+.lang-in .food-icons-new { background-position: 0 0; height: 42px; width: 42px; }
+.lang-in .food-icons-spicy { background-position: 0 -42px; height: 42px; width: 42px; }
+.lang-in .global-navbar .navbar-nav .menu-item { padding-right: 20px; margin-right: 20px; }
+.lang-in .global-navbar .navbar-nav .menu-item:first-child { padding-left: 20px; }
+@media screen and (max-width: 1199px) { .lang-in .global-navbar .navbar-nav .menu-item { padding-right: 6px; margin-right: 6px; }
+  .lang-in .global-navbar .navbar-nav .menu-item:first-child { padding-left: 6px; } }
+.lang-in .table-product-detail tr td.product-name { width: 38%; }
+.lang-in .table-product-detail tr td.quantity { width: 12%; }
+
+.lang-in.page-menu .panel-product .product-cost { font-size: 16px; font-size: 1rem; }
+#deliveryAddressFrameSection > #form_deliveryaddress > .iframe > [id=apaFrame]  {
+	width: 100%;
+	height: 430px;
+	padding: 0;
+	min-width: 1100px;
+}
+#form_order_payment_guest_mobileno-error {
+	padding-left: 171px;
+}
+/*# sourceMappingURL=local.css.map */

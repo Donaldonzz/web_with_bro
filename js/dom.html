@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document Object Model</title>
+</head>
+<script>
+    function ngubah_Text() {
+        var element = document.getElementById('judul');
+        element.innerHTML = 'Ini adalah Document Object Model';
+        element.style.color = 'blue';
+    }
+
+    function ngubah_sila(sila) {
+        var element = document.getElementById('sila');
+        var sila_texts = [
+            'Ketuhanan yang Maha Esa',
+            'Kemanusiaan yang adil dan beradab',
+            'Persatuan Indonesia',
+            'Kerakyatan yang dipimpin oleh hikmat kebijaksanaan dalam permusyawaratan/perwakilan',
+            'Keadilan sosial bagi seluruh rakyat Indonesia'
+        ];
+        element.innerHTML = sila_texts[sila - 1];
+    }
+</script>
+<body>
+    <h1 id="judul">DOM</h1>
+    <p id="sila" class="sila">Ketuhanan yang Maha Esa</p>
+    
+    <div>
+        <button onclick="ngubah_sila(1)">Sila 1</button>
+        <button onclick="ngubah_sila(2)">Sila 2</button>
+        <button onclick="ngubah_sila(3)">Sila 3</button>
+        <button onclick="ngubah_sila(4)">Sila 4</button>
+        <button onclick="ngubah_sila(5)">Sila 5</button>
+    </div>
+    
+    <button onclick="ngubah_Text()">Change text</button>
+</body>
+</html>

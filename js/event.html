@@ -1,0 +1,33 @@
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Listerner</title>
+    <style>
+        #kotak {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <button id="btn">Klik Saya!</button>
+    <p id="pesan"></p>
+    <div id="kotak">
+
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        let pesan = document.getElementById("pesan");
+        btn.addEventListener("click",function(){
+            pesan.innerText="tombol sudah di klik";
+        });
+        var kotak = document.getElementById("kotak");
+        kotak.addEventListener("mouseover",function(){
+            kotak.style.backgroundColor='RED';
+        });
+        kotak.addEventListener("mouseout",function(){
+            kotak.style.backgroundColor='BLUE';
+        });
+    </script>
+</body>

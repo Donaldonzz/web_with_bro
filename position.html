@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh Positioning</title>
+  <style>
+    .static-box {
+      position: static;
+      background-color: #ffeb3b;
+      padding: 10px;
+    }
+    .relative-box {
+      position: relative;
+      left: 20px;
+      top: 10px;
+      background-color: #8bc34a;
+      padding: 10px;
+    }
+    .absolute-container {
+      position: relative;
+      height: 200px;
+      background-color: #e0e0e0;
+    }
+    .absolute-box {
+      position: absolute;
+      top: 50px;
+      left: 30px;
+      background-color: #ff5722;
+      padding: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="static-box">Static</div>
+  <div class="relative-box">Relative</div>
+  <div class="absolute-container">
+    <div class="absolute-box">Absolute</div>
+  </div>
+</body>
+</html>

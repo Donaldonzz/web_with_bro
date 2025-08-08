@@ -1,0 +1,15 @@
+// This file contains the common register fields validations on front-end side. Please do not use for market specific solutions! 
+
+jQuery(function($) {
+	$.validator.addMethod('verifyPassword', function(value, element) {
+		var reg = /^.*((?=.*\d)(?=.*[a-z]).{8,128}).*$/;
+		return (this.optional(element) || reg.test(value));
+	});
+	
+	$.validator.addMethod('email', function(value, element) {
+		var reg = /^([a-zA-Z0-9_\.\-\+])+\@(([a-zA-Z0-9\-])+\.)+([a-zA-Z0-9]{2,4})+$/;
+		return (this.optional(element) || reg.test(value));
+	});
+	
+	
+});
