@@ -99,3 +99,10 @@ span {
 .btn:hover {
   background-color: gray;
 }
+.project-list img {
+  width: 240px;
+  height: 183.5px;
+  object-fit: cover; /* gambar tetap proporsional */
+  display: block;
+  margin: 0 auto;
+}
